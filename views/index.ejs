@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather App</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="../public/style.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="search-box">
+			<input type="text" id="search-input cityName" name="cityName" placeholder="Enter a city name...">
+			<button id="search-button"><i class="fas fa-search"></i></button>
+		</div>
+		<div class="weather-box">
+			<div class="location">
+				<h1 id="city-name">
+					<%= city %>
+				</h1>
+				<p id="date-time">
+					<%= Date %>
+				</p>
+			</div>
+			<div class="temperature">
+				<h2 id="temp-value">
+					<%= Temp %>°C
+				</h2>
+
+			</div>
+			<div class="condition">
+				<img src="<%= Img %>" alt="Cloudy" id="condition-icon">
+				<p id="condition-name"></p>
+			</div>
+			<div class="details">
+				<div class="detail-item">
+					<p id="humidity-value">
+						<%= Hum %>
+					</p>
+					<p id="humidity-name">Humidity</p>
+				</div>
+				<div class="detail-item">
+					<p id="wind-value">
+						<%= Wind %>
+					</p>
+					<p id="wind-name">Wind</p>
+				</div>
+				<div class="detail-item">
+					<p id="pressure-value">
+						<%= Pre %>hPa
+					</p>
+					<p id="pressure-name">Pressure</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add your JavaScript code here -->
+	<script src="app.js"></script>
+
+	<!-- Add Font Awesome icons here -->
+	<script src="1"></script>
+
+</body>
+
+</html>
